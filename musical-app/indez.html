@@ -23,38 +23,61 @@
     <h1>Musical Pau</h1>
     <p class="pmusical">Escucha mis 3 canciones de Ariana Grande.</p>
    
-    <div class="lista-canciones">
-    <CANCIÓN 1-->
+ <!--    <div class="lista-canciones">
+    <CANCIÓN 1 -->
 
-<div class=" canciones">
+<!-- <div class=" canciones">
          <p>💋. Thank u next </p>
          <audio controls class="audio-player">
                     <!-- Mp3 de prueba 1 -->
-                    <source src="thank u, next .mp3" type="audio/mpeg">
-                </audio>
+                 <!--    <source src="thankunext.mp3" type="audio/mpeg">
+                </audio> -->
 
 
-</div>
+<!-- </div>
 
-   <CANCIÓN 2-->
+   <CANCIÓN 2 -->
 
-<div class=" canciones">
-         <p>💍. 7 rings </p>
+<!-- <div class=" canciones">  -->
+         <!-- <p>💍. Onelasttime </p>
          <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="7 rings. mp3" type="audio/mpeg">
+                    Mp3 de prueba 1
+                    <source src="7 rings. mp3" type="audio/mpeg"> 
                 </audio>
 
 
-    </div>
-       <CANCIÓN 3-->
+  <!--   </div>
+       <CANCIÓN 3--> 
 
-<div class=" canciones">
+<!-- <div class=" canciones">
          <p>⭐️. God is a woman </p>
-         <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="God Is A Woman.mp3" type="audio/mpeg">
+         <audio controls class="audio-player"> -->
+                    <!-- Mp3 de prueba 1
+                    <source src="GodIsAWoman.mp3" type="audio/mpeg">
                 </audio>
+ -->
+
+
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">💋Thank u next </p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="thankunext .mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+
+      </div>
+
+<script src="script.js"></script>
 
 
 
@@ -63,3 +86,4 @@
     
 </body>
 </html>
+
